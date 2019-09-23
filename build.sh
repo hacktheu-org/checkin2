@@ -4,7 +4,7 @@ cd "$(dirname "$SOURCE_DIR")" || exit
 set -xeuo pipefail
 
 # Load Registration's API
-curl -s 'https://raw.githubusercontent.com/HackGT/registration/master/api.graphql' \
+curl -s 'https://raw.githubusercontent.com/hacktheu-org/registration/master/api.graphql' \
      > ./apis/registration.graphql
 
 ./node_modules/.bin/apollo-codegen introspect-schema \
